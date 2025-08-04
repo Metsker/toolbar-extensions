@@ -28,8 +28,8 @@ namespace ToolbarExtensions.Elements
         {
             float round = (float)Math.Round(evt.newValue, 1);
             Time.timeScale = round;
-            value = round;
             label = LabelText;
         }
     }
 }
+

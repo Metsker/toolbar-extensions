@@ -1,0 +1,13 @@
+﻿{
+  "name": "com.metsker.toolbar-extensions",
+  "version": "2.0.0",
+  "displayName": "Toolbar Extensions",
+  "description": "Scene navigation and debug utils for unity toolbar",
+  "dependencies": {
+    "com.paps.unity-toolbar-extender-ui-toolkit": "2.0.0"
+  },
+  "author": {
+    "name": "Metsker",
+    "url": "https://github.com/Metsker"
+  }
+}

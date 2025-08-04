@@ -1,0 +1,10 @@
+﻿{
+  "name": "ToolbarExtensions.Editor",
+  "references": [
+    "Paps.UnityToolbarExtenderUIToolkit",
+    "ToolbarExtensions.Runtime"
+  ],
+  "includePlatforms": [
+    "Editor"
+  ]
+}

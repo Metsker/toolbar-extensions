@@ -7,7 +7,7 @@ namespace ToolbarExtensions
     [InitializeOnLoad]
     public class ToolbarExtensionsInitializer
     {
-        static MainToolbarExtensionInitializer()
+        static ToolbarExtensionsInitializer()
         {
             MainToolbar.OnInitialized += ApplyStyleSheet;
         }
@@ -19,3 +19,4 @@ namespace ToolbarExtensions
         }
     }
 }
+

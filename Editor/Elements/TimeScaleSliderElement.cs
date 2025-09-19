@@ -19,7 +19,8 @@ namespace ToolbarExtensions.Elements
             value = Time.timeScale;
             style.flexDirection = FlexDirection.RowReverse;
 
-            this.Q<Label>().style.width = 87;
+            labelElement.style.width = 87;
+            labelElement.pickingMode = PickingMode.Ignore;
             
             RegisterCallback<ChangeEvent<float>>(OnSliderValueChanged);
         }
@@ -32,4 +33,5 @@ namespace ToolbarExtensions.Elements
         }
     }
 }
+
 

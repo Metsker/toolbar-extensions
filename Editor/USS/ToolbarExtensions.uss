@@ -7,3 +7,7 @@
 .unity-toggle .unity-toggle__checkmark {
     margin-top: 2px;
 }
+.unity-slider > .unity-label{
+    margin-left: 2px;
+    margin-right: 0;
+}

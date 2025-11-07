@@ -21,8 +21,7 @@ namespace ToolbarExtensions.Elements
                 string path = scene.path;
                 string sceneName = Path.GetFileNameWithoutExtension(path);
 
-                var sceneButton = new Button();
-                sceneButton.clickable = new Clickable(() =>
+                Button sceneButton = new Button(() =>
                 {
                     if (!EditorSceneManager.SaveCurrentModifiedScenesIfUserWantsTo())
                         return;
@@ -39,4 +38,5 @@ namespace ToolbarExtensions.Elements
         }
     }
 }
+
 

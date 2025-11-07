@@ -21,13 +21,16 @@ namespace ToolbarExtensions.Elements
                 string path = scene.path;
                 string sceneName = Path.GetFileNameWithoutExtension(path);
 
-                var sceneButton = new Button(() =>
+                var sceneButton = new Button();
+                sceneButton.clickable = new Clickable(() =>
                 {
                     if (!EditorSceneManager.SaveCurrentModifiedScenesIfUserWantsTo())
                         return;
 
                     EditorSceneManager.OpenScene(path, !Event.current.alt ? OpenSceneMode.Single : OpenSceneMode.Additive);
                 });
+                sceneButton.clickable.activators.Add(new ManipulatorActivationFilter { button = MouseButton.LeftMouse, modifiers = EventModifiers.Alt });
+                
                 sceneButton.style.overflow = Overflow.Visible;
                 sceneButton.text = sceneName;
                 sceneButton.tooltip = "Hold Alt to open in additive mode";
@@ -36,3 +39,4 @@ namespace ToolbarExtensions.Elements
         }
     }
 }
+
